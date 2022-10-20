@@ -60,19 +60,46 @@ let animal = 'cow';
 console.log(animal === 'cow' ? "mooooooo" : "Hey!  You're not a cow!");
 
 //Driver's Ed
-
+let personsAge = 16;
+console.log(personsAge >= 16 ? "Here are the keys!" : "Sorry, you're too young.");
 
 
 //LOOPS
 
 //The Basics
+for(let i = 0; i <= 10; i++){
+    console.log(i);
+}
+for(let i = 10; i <= 400; i++){
+    console.log(i);
+}
+for(let i = 12; i <= 4000; i+=3){
+    console.log(i);
+}
 
 //Get Even
+for(let i = 1; i <= 100; i++){
+    !(i%2) ? console.log(i + '<--is an even number') : console.log(i);
+}
 
 //Give Me 5
+for(let i = 0; i <= 100; i++){
+    //if(i > 0 && !(i%5)) console.log(`I found a ${i}. High five!`);
+    let output = '';
+    if(i > 0 && !(i%3)) output += `I found a ${i}. Three is a crowd. `;
+    if(i > 0 && !(i%5)) output += `I found a ${i}. High five!`;
+    if(output)console.log(output);
+}
 
 //Savings Account
-
+let bankAccount = 0;
+for(let i = 1; i <= 10; i++){
+    bankAccount += i;
+}
+let bonusAccount = 0;
+for(let i = 1; i <= 100; i++){
+    bonusAccount += i * 2;
+}
 
 
 //ARRAYS & CONTROL FLOW
