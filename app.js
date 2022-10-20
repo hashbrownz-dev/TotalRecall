@@ -138,3 +138,73 @@ ourClass[ourClass.length - 1] = 'Octocat';
 ourClass.push("Cloud City");
 
 //Mix It Up
+
+const myArray = [5,10,500,20];
+
+myArray.push("Aegon");
+myArray.push("Scourge of Iron");
+myArray.shift();
+myArray.unshift("Bob Marley");
+myArray.pop();
+myArray.reverse();
+
+//  Did you mutate the array? What does mutate mean? Did the .reverse()method return anything?
+//  Yes I did mutate the array. When we mutate an object, we change the initial object.  methods like Array.prototype.reverse() and Array.prototype.sort() make changes to the array that calls them, while methods like Array.prototype.slice() do NOT change the array that calls them.  Yes, the .reverse() method returns a reference to the original array after the mutation.
+
+//Biggie Smalls
+
+let myInt = 100;
+if(myInt < 100){
+    console.log('little number');
+} else {
+    console.log('big number');
+}
+
+//Monkey in the Middle
+if(myInt < 5){
+    console.log('little number');
+} else if(myInt > 10){
+    console.log('big number');
+} else {
+    console.log("monkey");
+}
+
+//What's in Your Closet?
+const kristynsCloset = [
+"left shoe",
+"cowboy boots",
+"right sock",
+"GA hoodie",
+"green pants",
+"yellow knit hat",
+"marshmallow peeps"
+];
+const thomsCloset = [
+[
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+]
+];
+console.log("Kristyn is rocking that " + kristynsCloset[2] + " today!");
+kristynsCloset.splice(6,0,"raybans");
+kristynsCloset[5] = "stained knit hat";
+// Let's Dress Thom
+const thomsShirt = thomsCloset[0][3];
+const thomsPants = thomsCloset[1][1];
+const thomsAccessory = thomsCloset[2][2];
+
+console.log(`Thom is looking fierce in a ${thomsShirt}, ${thomsPants}, and ${thomsAccessory}!`);
+thomsCloset[1][2] = "Footie Pajamas";
