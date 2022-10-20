@@ -104,5 +104,37 @@ for(let i = 1; i <= 100; i++){
 
 //ARRAYS & CONTROL FLOW
 
+//Talk about it
 
+//  What are the things in an array called?
+//  Elements
+//  Do Arrays guarantee those things will be in order?
+//  Yes!
+//  What real-life thing could you model with an array?
+//  Any ordered or unordered list like a shopping list, a to-do list, or a list of names or birthdays.
+//  Any kind of container or vessel that holds other things, like a closet, or drawer or chest.
 
+//Easy Does It
+
+const quotes = [
+    'Wubba Lubba Dub Dub!',
+    "What, so everyone's supposed to sleep every single night now?  You realize that nighttime makes up half of all time?",
+    "Boom!  Big reveal!  I turned myself into a pickle!"
+];
+
+//Accessing Elements
+const randomThings = [1, 10, "Hello", true];
+//Access the 1st element in the array
+randomThings[0];
+//Change the value of "Hello" to "World"
+randomThings[2] = "World";
+console.log(randomThings);
+
+//Change values
+const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"];
+//Access the 3rd element of the array
+ourClass[2];
+ourClass[ourClass.length - 1] = 'Octocat';
+ourClass.push("Cloud City");
+
+//Mix It Up
