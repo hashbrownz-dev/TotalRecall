@@ -208,3 +208,54 @@ const thomsAccessory = thomsCloset[2][2];
 
 console.log(`Thom is looking fierce in a ${thomsShirt}, ${thomsPants}, and ${thomsAccessory}!`);
 thomsCloset[1][2] = "Footie Pajamas";
+
+//FUNCTIONS
+
+//printCool
+function printCool(name){
+    return name + ' is cool!';
+}
+console.log(printCool('Johnny'));
+
+//calculateCube
+function calculateCube(num){
+    return num * num * num;
+}
+console.log(calculateCube(5));
+
+//isVowel
+function isVowel(char){
+    const vowels = ['a','e','i','o','u'];
+    return vowels.includes(char.toLowerCase());
+}
+
+//getTwoLengths
+function getTwoLengths(string1, string2){
+    return [string1.length, string2.length];
+}
+
+//getMultipleLengths
+function getMultipleLengths(strings){
+    const output = [];
+    for(let string of strings){
+        output.push(string.length);
+    }
+    return output;
+}
+
+//maxOfThree
+function maxOfThree(a,b,c){
+    let max = a;
+    if(b > max) max = b;
+    if(c > max) max = c;
+    return max;
+}
+
+//printLongestWord
+function printLongestWord(words){
+    let longest = words[0];
+    for(let i = 1; i < words.length; i++){
+        if(words[i].length > longest.length) longest = words[i];
+    }
+    return longest;
+}
