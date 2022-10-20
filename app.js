@@ -259,3 +259,55 @@ function printLongestWord(words){
     }
     return longest;
 }
+
+//OBJECTS
+
+//Make a User Object
+const user = {
+    name:'Violet',
+    email:'violet@coolkid.com',
+    age:'8',
+    purchased:[]
+};
+
+//Update the user
+user.email = 'violet@thehotmail.com';
+user.age++;
+
+//Adding keys and values
+user.location = "Dad's House";
+
+//Shopaholic!
+user.purchased.push('carbohydrates');
+user.purchased.push('peace of mind');
+user.purchased.push('Merino jodhpurs');
+console.log(user.purchased[user.purchased.length - 1]);
+
+//Object Within Object
+user.friend = {
+    name:'Scarlett',
+    age:10,
+    location:'Aurora, CO',
+    purchased:[]
+};
+console.log(user.friend.name);
+console.log(user.friend.location);
+user.friend.age = 55;
+user.friend.purchased.push('The One Ring');
+user.friend.purchased.push('A latte');
+console.log(user.friend.purchased[user.friend.purchased.length - 1]);
+
+//Loops
+for(let item of user.purchased){
+    console.log(item);
+}
+
+for(let item of user.friend.purchased){
+    console.log(item);
+}
+
+//Functions can operate on objects
+function updateUser(){
+    user.age++;
+    user.name = user.name.toUpperCase();
+}
