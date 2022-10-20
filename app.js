@@ -16,7 +16,7 @@
 //  4.  Remind me, what are declare, assign, and define?
 //      declare - when we declare a variable, we create a container to store data in.  We can declare a variable 4 ways: with var, let, const, and without a keyword.  When declaring a variable with const, we must assign a value to the variable.
 //      assign - assignment is when we put data into into our container (variable).
-//      define - 
+//      define - when we define a variable, we declare it and assign a value to it
 
 //  5.  What is pseudocoding and why should you do it?
 //      Pseudocode is when you describe the function of your code using plain English.  Writing pseudocode allows us to focus on the logic and behavior of our code without worrying about things like syntax and code patterns.  It also helps us to take large or complex problems and begin to break them down into smaller, more manageable problems.
