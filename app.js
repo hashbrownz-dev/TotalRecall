@@ -311,3 +311,41 @@ function updateUser(){
     user.age++;
     user.name = user.name.toUpperCase();
 }
+
+//cat Combinator
+
+const cat1 = {
+    name:'Fitz',
+    breed:'Calico',
+    age:8,
+    sayAge:function(){console.log(this.age)},
+    sayBreed:function(){console.log(this.breed)}
+};
+
+const cat2 = {
+    name:'Mable',
+    breed:'Tabby',
+    age:7
+}
+
+function combineCats(cat1, cat2){
+    const   {name: cat1Name, breed: cat1Breed} = cat1,
+            {name: cat2Name, breed: cat2Breed} = cat2;
+    return {
+        name: cat1Name + cat2Name,
+        breed: cat1Breed + '-' + cat2Breed,
+        age: 1
+    }
+}
+
+combineCats(cat1,cat2);
+
+console.log(
+    combineCats(
+        combineCats(
+            combineCats(cat1,cat2), combineCats(cat1,cat2)
+        ),combineCats(
+            combineCats(cat1,cat2),combineCats(cat1,cat2)
+        )
+    )
+);
